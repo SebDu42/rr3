@@ -62,5 +62,3 @@ $contenu .= <<<EOT
 EOT;
 
 require "../config/gabarit.php";
-
-?>

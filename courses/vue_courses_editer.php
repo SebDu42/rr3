@@ -131,13 +131,13 @@ EOT;
 
 if ($idCategorie != '') {
     $contenu .= <<<EOT
-    
+
     <br>
     <label for="serie">Série&nbsp;:&nbsp;</label>
     <select id="serie" name="cs_id" onChange="filtrerSerie()">
 $optionsSerie
     </select>
-    
+
 EOT;
     if ($idSerie != '') {
         $contenu .= <<<EOT
@@ -192,7 +192,7 @@ EOT;
     }
     else {
     $contenu .= <<<EOT
-    
+
     <button id="annuler" type="button" onclick="location.href='$urlAnnuler'" />Annuler</button>
 </div>
 
@@ -201,7 +201,7 @@ EOT;
 }
 else {
     $contenu .= <<<EOT
-    
+
     <button id="annuler" type="button" onclick="location.href='$urlAnnuler'" />Annuler</button>
 </div>
 
@@ -209,5 +209,3 @@ EOT;
 }
 
 require "../config/gabarit.php";
-
-?>

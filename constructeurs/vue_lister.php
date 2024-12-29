@@ -27,7 +27,7 @@ EOT;
 
 // Scripts utilisé pour la suppression
 $scripts = <<<EOT
-    
+
 function alertFunction(id) {
     var r=confirm("Voulez-vous vraiment supprimer ce constructeur ?");
     if (r == true) {
@@ -40,7 +40,7 @@ EOT;
 
 // Affichage de la liste des constructeurs
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <table id="liste">
 <thead>
@@ -57,5 +57,3 @@ $lignes
 EOT;
 
 require "../config/gabarit.php";
-
-?>

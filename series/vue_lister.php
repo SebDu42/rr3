@@ -75,7 +75,7 @@ EOT;
 
 // Affichage de la liste des séries
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <div id="filtres">&nbsp;
     <label for="categorie">Catégorie de courses&nbsp;:&nbsp;</label>
@@ -108,5 +108,3 @@ $lignes
 EOT;
 
 require "../config/gabarit.php";
-
-?>

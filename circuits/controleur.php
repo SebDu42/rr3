@@ -37,7 +37,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste des circuits et de leurs configurations
@@ -142,5 +142,3 @@ function cTesterDonnees($donnees) {
 
     return $erreurs;
 }
-
-?>

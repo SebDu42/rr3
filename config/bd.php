@@ -20,12 +20,7 @@ function connecterBase() {
     return $con;
 }
 
-// Fermeture de la connexion avec la base de données
-function deconnecterBase($con) {
-    // mysqli_close($con);
-}
-
 function deconnecterGlobaleBase() {
     global $con;
-    deconnecterBase($con);
+    mysqli_close($con);
 }

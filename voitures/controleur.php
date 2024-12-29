@@ -40,7 +40,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de toutes les modèles de voitures ou des voitures de l'utilisateur, éventuellement filtrées par constructeur
@@ -289,5 +289,3 @@ function cTesterDonnees($donnees) {
 
     return $erreurs;
 }
-
-?>

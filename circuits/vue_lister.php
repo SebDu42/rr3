@@ -7,7 +7,7 @@ require "vue_menus.php";
 $contenu = '';
 
 // Préparation des lignes du tableau
-$lignes = '';    
+$lignes = '';
 if (isset($circuits)) {
     while ($circuit = $circuits->fetch_object()) {
         $configurations = mRecupererConfigurationsCircuit($circuit->ci_id);
@@ -82,5 +82,3 @@ $lignes
 EOT;
 
 require "../config/gabarit.php";
-
-?>

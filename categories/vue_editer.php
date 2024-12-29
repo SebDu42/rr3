@@ -53,5 +53,3 @@ $optionsCPs
 EOT;
 
 require "../config/gabarit.php";
-
-?>

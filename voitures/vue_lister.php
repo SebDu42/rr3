@@ -205,5 +205,3 @@ $lignes
 EOT;
 
 require "../config/gabarit.php";
-
-?>

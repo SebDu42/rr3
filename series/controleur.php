@@ -51,7 +51,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de toutes les séries, éventuellement filtrées par catégorie
@@ -268,5 +268,3 @@ function cTesterDonnees($donnees) {
 
     return $erreurs;
 }
-
-?>

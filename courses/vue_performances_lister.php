@@ -7,7 +7,7 @@
 require "vue_menus.php";
 
 $contenu = '';
-  
+
 // Liste pour la sélection de la categorie
 $selected = $idCategorie == '' ? " selected" : '';
 $optionsCategorie = "\t\t<option value$selected>Toutes</option>\n";
@@ -54,10 +54,10 @@ if (isset($performances) && $performances) {
         else {
             $voiture = '';
         }
-        
+
         $recompense = isset($performance->up_recompense) ? $performance->up_recompense."&nbsp;".$performance->m_nom : '';
         $vitesse = $performance->up_vitesse ? $performance->up_vitesse."&nbsp;km/h" : '';
-        $distance = $performance->up_distance ? ($performance->c_fk_ct_id == -1 ? (int)$performance->up_distance."&nbsp;m" : $performance->up_distance."&nbsp;km") : '';        
+        $distance = $performance->up_distance ? ($performance->c_fk_ct_id == -1 ? (int)$performance->up_distance."&nbsp;m" : $performance->up_distance."&nbsp;km") : '';
         $lignes .= <<<EOT
 <tr>
     <td>$CP$performance->cca_rang- $performance->cca_nom</td>
@@ -96,28 +96,28 @@ function alertFunction(id) {
 }
 
 function filtrerCategorie() {
-   i = document.getElementById("categorie").selectedIndex;
-   idCategorie = document.getElementById("categorie").options[i].value;
-   parent.location.href = "controleur.php?action=mes_performances&cca_id=" + idCategorie + "&cs_id=&ce_id=";
+    i = document.getElementById("categorie").selectedIndex;
+    idCategorie = document.getElementById("categorie").options[i].value;
+    parent.location.href = "controleur.php?action=mes_performances&cca_id=" + idCategorie + "&cs_id=&ce_id=";
 }
 
 function filtrerSerie() {
-   i = document.getElementById("serie").selectedIndex;
-   idSerie = document.getElementById("serie").options[i].value;
-   parent.location.href = "controleur.php?action=mes_performances&cs_id=" + idSerie + "&ce_id=";
+    i = document.getElementById("serie").selectedIndex;
+    idSerie = document.getElementById("serie").options[i].value;
+    parent.location.href = "controleur.php?action=mes_performances&cs_id=" + idSerie + "&ce_id=";
 }
 
 function filtrerEvenement() {
-   i = document.getElementById("evenement").selectedIndex;
-   idEvenement = document.getElementById("evenement").options[i].value;
-   parent.location.href = "controleur.php?action=mes_performances&ce_id=" + idEvenement;
+    i = document.getElementById("evenement").selectedIndex;
+    idEvenement = document.getElementById("evenement").options[i].value;
+    parent.location.href = "controleur.php?action=mes_performances&ce_id=" + idEvenement;
 }
 
 EOT;
 
 // Affichage de la liste des performances
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <div id="filtres">&nbsp;
     <label for="categorie">Catégorie de courses&nbsp;:&nbsp;</label>
@@ -129,17 +129,17 @@ EOT;
 
 if ($idCategorie != '') {
     $contenu .= <<< EOT
-    
+
     <label for="serie">Série&nbsp;:&nbsp;</label>
     <select id="serie" name="cs_id" onChange="filtrerSerie()">
 $optionsSerie
     </select>
 
 EOT;
-    
+
     if ($idSerie != '') {
         $contenu .= <<<EOT
-        
+
     <label for="evenement">Événement&nbsp;:&nbsp;</label>
     <select id="evenement" name="ce_id" onChange="filtrerEvenement()">
 $optionsEvenement
@@ -176,7 +176,5 @@ $lignes
 </tbody>
 </table>
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

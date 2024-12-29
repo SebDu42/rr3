@@ -60,22 +60,22 @@ function alertFunction(id) {
 }
 
 function filtrerCategorie() {
-   i = document.getElementById("categorie").selectedIndex;
-   idCategorie = document.getElementById("categorie").options[i].value;
-   parent.location.href = "controleur.php?action=lister&cca_id=" + idCategorie + "&cs_id=";
+    i = document.getElementById("categorie").selectedIndex;
+    idCategorie = document.getElementById("categorie").options[i].value;
+    parent.location.href = "controleur.php?action=lister&cca_id=" + idCategorie + "&cs_id=";
 }
 
 function filtrerSerie() {
-   i = document.getElementById("serie").selectedIndex;
-   idSerie = document.getElementById("serie").options[i].value;
-   parent.location.href = "controleur.php?action=lister&cs_id=" + idSerie;
+    i = document.getElementById("serie").selectedIndex;
+    idSerie = document.getElementById("serie").options[i].value;
+    parent.location.href = "controleur.php?action=lister&cs_id=" + idSerie;
 }
 
 EOT;
 
 // Affichage de la liste des événements
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <div id="filtres">&nbsp;
     <label for="categorie">Catégorie de courses&nbsp;:&nbsp;</label>
@@ -87,7 +87,7 @@ EOT;
 
 if ($idCategorie != '') {
     $contenu .= <<<EOT
-    
+
     <label for="serie">Série&nbsp;:&nbsp;</label>
     <select id="serie" name="cs_id" onChange="filtrerSerie()">
 $optionsSerie
@@ -114,7 +114,5 @@ $lignes
 </tbody>
 </table>
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

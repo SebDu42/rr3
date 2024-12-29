@@ -9,5 +9,3 @@ $itemsMenuActions[] = ["lister", "Lister", "Lister les voitures disponibles"];
 $itemsMenuActions[] = ["ajouter", "Ajouter", "Ajouter un modèle de voiture"];
 
 $menuActions = genererMenuActions($itemsMenuActions, "voitures");
-
-?>

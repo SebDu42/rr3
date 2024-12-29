@@ -34,7 +34,5 @@ $contenu .= <<<EOT
 </form>
 
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

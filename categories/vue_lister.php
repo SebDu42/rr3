@@ -5,7 +5,7 @@ require "vue_menus.php";
 $contenu = '';
 
 // Préparation des lignes du tableau
-$lignes = '';    
+$lignes = '';
 if (isset($categories)) {
     while ($categorie = $categories->fetch_object()) {
         $CP = $categorie->cca_fk_ccap_id == 1 ? "SA" : "CR";
@@ -57,5 +57,3 @@ $lignes
 EOT;
 
 require "../config/gabarit.php";
-
-?>

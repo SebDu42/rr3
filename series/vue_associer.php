@@ -24,7 +24,7 @@ while ($voiture = $voituresAssociees->fetch_object()) {
 <td style="text-align: right">$voiture->v_freinage m</td>
 <td style="text-align: right">$voiture->v_adherence g</td>
 <td style="text-align: right">$voiture->v_ip</td>
-<td>            
+<td>
     <a class="retirer" href="controleur.php?action=retirer_voiture&va_id=$voiture->va_id" title="Retirer la voiture des voitures assocées"></a>
 </td>
 </tr>
@@ -44,7 +44,7 @@ while ($voiture = $voituresDisponibles->fetch_object()) {
 <td style="text-align: right">$voiture->v_freinage m</td>
 <td style="text-align: right">$voiture->v_adherence g</td>
 <td style="text-align: right">$voiture->v_ip</td>
-<td>            
+<td>
     <a class="ajouter" href="controleur.php?action=ajouter_voiture&cs_id=$idSerie&v_id=$voiture->v_id" title="Associer la voiture"></a>
 </td>
 </tr>
@@ -66,7 +66,7 @@ EOT;
 // Affichage des listes des voitures associées et des voitures disponibles
 $nomSerie = $serie["cs_nom"];
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <h2>$nomSerie</h2>
 <fieldset>
@@ -120,7 +120,5 @@ $contenu .= <<<EOT
     </table>
 </fieldset>
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

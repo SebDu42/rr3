@@ -82,7 +82,7 @@ $contenu .= <<<EOT
     <input type="hidden" name="ci_nom" value="$circuit">
     <input type="hidden" name="up_fk_c_id" value="$idCourse">
     <fieldset>
-        <legend>Performance</legend>    
+        <legend>Performance</legend>
         <label for="voiture">Voiture&nbsp;:&nbsp;</label>
         <select id="voiture" name="up_fk_uv_id">
 $optionsVoiture
@@ -116,7 +116,5 @@ $optionsVoiture
 </form>
 
 EOT;
-  
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

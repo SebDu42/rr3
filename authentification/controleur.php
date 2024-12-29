@@ -21,7 +21,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Connexion d'un utlisateur
@@ -67,5 +67,3 @@ function validerAUthentification($courriel) {
     $utilisateur = recupererUtilisateurParCourriel($courriel);
     $_SESSION["utilisateur"] = $utilisateur;
 }
-
-?>

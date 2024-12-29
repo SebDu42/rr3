@@ -9,5 +9,3 @@ $itemsMenuActions[] = ["ajouter", "Ajouter", "Ajouter un événement"];
 //$itemsMenuActions[] = ["associer_voiture", "Associer voitures", "Associer des voitures un événement"];
 
 $menuActions = genererMenuActions($itemsMenuActions, "evenements");
-
-?>

@@ -9,5 +9,3 @@ $itemsMenuActions[] = ["lister_courses", "Lister", "Lister les courses"];
 $itemsMenuActions[] = ["ajouter_course", "Ajouter", "Ajouter une courses"];
 
 $menuActions = genererMenuActions($itemsMenuActions, "courses");
-
-?>

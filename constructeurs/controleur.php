@@ -36,7 +36,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de tous les constructeurs
@@ -119,5 +119,3 @@ function cTesterDonnees($donnees) {
     // Auncune vérification nécessaire pour les constructeurs
     return $erreurs;
 }
-
-?>

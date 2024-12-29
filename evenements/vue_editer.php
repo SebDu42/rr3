@@ -48,9 +48,9 @@ $erreurRang = isset($erreurs["rang"]) ? $erreurs["rang"] : '';
 $scripts = <<<EOT
 
 function filtrerCategorie() {
-   i = document.getElementById("categorie").selectedIndex;
-   idCategorie = document.getElementById("categorie").options[i].value;
-   parent.location.href = "$urlAction&cca_id=" + idCategorie + "&cs_id=&ce_id=$id";
+    i = document.getElementById("categorie").selectedIndex;
+    idCategorie = document.getElementById("categorie").options[i].value;
+    parent.location.href = "$urlAction&cca_id=" + idCategorie + "&cs_id=&ce_id=$id";
 }
 
 EOT;
@@ -101,5 +101,3 @@ EOT;
 }
 
 require "../config/gabarit.php";
-
-?>

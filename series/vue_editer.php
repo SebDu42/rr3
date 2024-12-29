@@ -85,5 +85,3 @@ $optionsStatuts
 EOT;
 
 require "../config/gabarit.php";
-
-?>

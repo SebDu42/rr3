@@ -53,7 +53,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de tous les événements, éventuellement filtrés par catégorie et série
@@ -259,6 +259,3 @@ function cTesterDonnees($donnees) {
 
     return $erreurs;
 }
-
-
-?>

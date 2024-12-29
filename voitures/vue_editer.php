@@ -70,7 +70,7 @@ $prix = isset($donnees["v_prix"]) ? $donnees["v_prix"] : '';
 $url = isset($donnees["v_url"]) ? $donnees["v_url"] : '';
 $vitesse = isset($donnees[$p."vitesse"]) ? $donnees[$p."vitesse"]: '';
 $acceleration = isset($donnees[$p."acceleration"]) ? $donnees[$p."acceleration"]: '';
-$freinage = isset($donnees[$p."freinage"]) ? $donnees[$p."freinage"]: ''; 
+$freinage = isset($donnees[$p."freinage"]) ? $donnees[$p."freinage"]: '';
 $adherence = isset($donnees[$p."adherence"]) ? $donnees[$p."adherence"]: '';
 $ip = isset($donnees[$p."ip"]) ? $donnees[$p."ip"]: '';
 $coutRevision = isset($donnees["v_cout_revision"]) ? $donnees["v_cout_revision"]: '';
@@ -221,5 +221,3 @@ $optionsMonnaie
 EOT;
 
 require "../config/gabarit.php";
-
-?>

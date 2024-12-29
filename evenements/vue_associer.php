@@ -16,7 +16,7 @@ while ($voiture = $voituresAssociees->fetch_object()) {
 <td style="text-align: right">$voiture->v_freinage m</td>
 <td style="text-align: right">$voiture->v_adherence g</td>
 <td style="text-align: right">$voiture->v_ip</td>
-<td>            
+<td>
     <a class="retirer" href="controleur.php?action=exclure_voiture&ce_id=$idEvenement&va_id=$voiture->va_id" title="Exclure la voiture de la liste des voitures associées"></a>
 </td>
 </tr>
@@ -36,7 +36,7 @@ while ($voiture = $voituresDisponibles->fetch_object()) {
 <td style="text-align: right">$voiture->v_freinage m</td>
 <td style="text-align: right">$voiture->v_adherence g</td>
 <td style="text-align: right">$voiture->v_ip</td>
-<td>            
+<td>
     <a class="ajouter" href="controleur.php?action=retablir_voiture&ve_id=$voiture->ve_id" title="Rétablir la voiture dans la liste des voitures associées"></a>
 </td>
 </tr>
@@ -47,7 +47,7 @@ EOT;
 // Affichage des listes des voitures héritées de la série et des voitures retirées de l'événement.
 $nomEvenement = $evenement["ce_nom"];
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <h2>$nomEvenement</h2>
 <fieldset>
@@ -97,7 +97,5 @@ $contenu .= <<<EOT
     </table>
 </fieldset>
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

@@ -36,7 +36,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de toutes les catégories
@@ -128,5 +128,3 @@ function cTesterDonnees($donnees) {
 
     return $erreurs;
 }
-
-?>

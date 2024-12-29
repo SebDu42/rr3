@@ -104,7 +104,7 @@ EOT;
 
 // Affichage de la liste des courses
 $contenu .= <<<EOT
-    
+
 <h1>$titre :</h1>
 <div id="filtres">&nbsp;
     <label for="categorie">Catégorie de courses&nbsp;:&nbsp;</label>
@@ -116,17 +116,17 @@ EOT;
 
 if ($idCategorie != '') {
     $contenu .= <<< EOT
-    
+
     <label for="serie">Série&nbsp;:&nbsp;</label>
     <select id="serie" name="cs_id" onChange="filtrerSerie()">
 $optionsSerie
     </select>
 
 EOT;
-    
+
     if ($idSerie != '') {
         $contenu .= <<<EOT
-        
+
     <label for="evenement">Événement&nbsp;:&nbsp;</label>
     <select id="evenement" name="ce_id" onChange="filtrerEvenement()">
 $optionsEvenement
@@ -161,7 +161,5 @@ $lignes
 </tbody>
 </table>
 EOT;
-    
-require "../config/gabarit.php";
 
-?>
+require "../config/gabarit.php";

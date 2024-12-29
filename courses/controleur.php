@@ -56,7 +56,7 @@ switch ($action) {
 }
 
 if (isset($con)) {
-    deconnecterGlobaleBase($con);
+    deconnecterGlobaleBase();
 }
 
 // Affiche la liste de toutes les performances de l'utilisateur, éventuellement filtrés par catégorie, série et événement;
@@ -401,5 +401,3 @@ function cTesterDonneesPerformance($donnees) {
 
     return $erreurs;
 }
-
-?>
