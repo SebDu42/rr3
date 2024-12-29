@@ -1,0 +1,508 @@
+/* Début des ajouts pour Bootstrap color mode */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-primary-border-subtle);
+    --bs-btn-hover-border-color: var(--bs-primary-border-subtle);
+    --bs-btn-focus-shadow-rgb: var(--bd-primary-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: var(--bs-primary-bg-subtle);
+    --bs-btn-active-border-color: var(--bs-primary-bg-subtle);
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+/* Fin des ajouts pour Bootstrap color mode */
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Ancien fichier CSS à partir d'ici */
+
+@media screen and (max-width: 800px) {
+  #menu_principal a:not(.active) {
+      display: none;
+  }
+
+  #menu_principal a.icon {
+      float: right;
+      display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #menu_principal.responsive {
+      position: relative;
+  }
+
+  #menu_principal.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  #menu_principal.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+/*
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0px;
+  font-family: Verdana, sans-serif;
+  background-color: #707070;
+}
+*/
+
+/*
+header {
+  width: 100%;
+  margin: 0px 0px 10px;
+  padding-bottom: 5px;
+  background-color: #478bf9;
+  color: white;
+}
+
+header #titre_page {
+  margin: 0px;
+  padding: 10px 10px;
+  font-size: xx-large;
+}
+
+header #contributeur {
+  margin: 0px;
+  padding: 0px 7px 10px 10px;
+}
+
+header #contributeur a {
+  display: block;
+  float: right;
+  padding: 6px;
+  margin: 0px 3px;
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  background: #F5F5F5;
+  color: #555;
+  border-radius: 2px;
+  border: 1px solid #CCC;
+}
+
+header #contributeur a:hover {
+  background: #d7d7eb;
+  border: 1px solid #d7d7eb;
+}
+
+header #contributeur a:active {
+  background: #ffa500;
+  color: #FFF;
+  border: 1px solid #ffa500;
+}
+*/
+
+#corps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menu_principal {
+  background: #f5f5f5;
+  overflow: hidden;
+  width: 100%;
+  margin: 0px 0px 10px;
+}
+
+#menu_principal a {
+  float: left;
+  display: block;
+  color: #555;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: large;
+}
+
+#menu_principal a:hover {
+  background-color: #478bf9;
+  color: #fff;
+}
+
+#menu_principal .active {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+#menu_principal .icon {
+  display: none;
+}
+
+#menu_actions {
+  width: 100%;
+  margin: 0px;
+}
+
+#menu_actions ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#menu_actions li a {
+  text-align: left;
+  background-color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+#menu_actions li:last-child {
+  flex: 1;
+  background-color: #707070;
+}
+
+#menu_actions li a,
+#menu_actions li span {
+  display: block;
+  padding: 8px 16px;
+  color: #555;
+  text-decoration: none;
+}
+
+#menu_actions li a:hover {
+  background-color: #478bf9;
+  color: #fff;
+}
+
+#menu_actions li a:active {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+#menu_actions li .active {
+  background-color: #d7d7eb;
+}
+
+#centre {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #d7d7eb;
+}
+
+#contenu {
+  padding: 6px;
+  margin: 0px auto 0px 0px;
+}
+
+#contenu h1 {
+  font-size: x-large;
+  clear: both;
+}
+
+#contenu h2 {
+  font-size: large;
+  font-style: italic;
+
+}
+
+#contenu #liste th,
+#contenu #liste_associees th,
+#contenu #liste_disponibles th {
+  padding: 2px 5px;
+  background: #0B0B3B;
+  color: #FFF;
+}
+
+#contenu #liste th span {
+  cursor: pointer;
+}
+
+#contenu #liste td,
+#contenu #liste_associees td,
+#contenu #liste_disponibles td {
+  padding: 2px 5px;
+}
+
+#contenu #liste tr:nth-child(even),
+#contenu #liste_associees tr:nth-child(even),
+#contenu #liste_disponibles tr:nth-child(even) {
+  background: #EEE;
+}
+
+#contenu #liste tr:nth-child(odd),
+#contenu #liste_associees tr:nth-child(odd),
+#contenu #liste_disponibles tr:nth-child(odd) {
+  background: #8e8ebf;
+}
+
+#contenu a.editer {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/edit-tool.png');
+}
+
+#contenu a.editer:hover {
+  background: url('../images/icones/edit-tool-actif.png');
+}
+
+#contenu a.supprimer {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/dustbin.png');
+}
+
+#contenu a.supprimer:hover {
+  background: url('../images/icones/dustbin-actif.png');
+}
+
+#contenu a.ajouter {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/add-tool.png');
+}
+
+#contenu a.ajouter:hover {
+  background: url('../images/icones/add-tool-actif.png');
+}
+
+#contenu a.voir {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/eye.png');
+}
+
+#contenu a.voir:hover {
+  background: url('../images/icones/eye-actif.png');
+}
+
+#contenu a.retirer {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/sub-tool.png');
+}
+
+#contenu a.retirer:hover {
+  background: url('../images/icones/sub-tool-actif.png');
+}
+
+#contenu a.associer_voiture {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 3px;
+  background: url('../images/icones/racing-car.png');
+}
+
+#contenu a.associer_voiture:hover {
+  background: url('../images/icones/racing-car-actif.png');
+}
+
+#contenu a.croissant {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0px 3px;
+  background: url('../images/icones/up.png');
+}
+
+#contenu a.croissant:hover {
+  background: url('../images/icones/up-actif.png');
+}
+
+#contenu a.decroissant {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0px 3px;
+  background: url('../images/icones/down.png');
+}
+
+#contenu a.decroissant:hover {
+  background: url('../images/icones/down-actif.png');
+}
+
+#contenu #selection label {
+  width: 200px;
+}
+
+#contenu legend {
+  font-weight: bold;
+}
+
+#contenu label {
+  display: block;
+  float: left;
+  text-align: right;
+}
+
+#contenu #filtres label {
+  display: inline;
+  float: unset;
+  text-align: unset;
+}
+
+#contenu select {
+  text-overflow: ellipsis;
+  margin-right: 10px;
+  width: 206px;
+}
+
+#contenu input {
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#contenu #authentification label {
+  width: 180px;
+}
+
+#contenu #course_performance label {
+  width: 120px;
+}
+
+#contenu #edition_categorie label {
+  width: 190px;
+}
+
+#contenu #edition_circuit label {
+  width: 220px;
+}
+
+#contenu #edition_course label {
+  width: 250px;
+}
+
+#contenu #edition_evenement label {
+  width: 200px;
+}
+
+#contenu #edition_performance label {
+  width: 230px;
+}
+
+#contenu #edition_serie label {
+  width: 250px;
+}
+
+#contenu #edition_voiture label {
+  width: 270px;
+}
+
+#contenu #edition_constructeurs label {
+  width: 200px;
+}
+
+#contenu #liste td.rubrique {
+  background: #ffff8e;
+}
+
+#contenu button {
+  display: inline-block;
+}
+
+#contenu .erreur {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+footer {
+  margin: 10px 0px 0px;
+  ;
+  padding: 5px;
+  background-color: #478BF9;
+  color: white;
+}
+*/
